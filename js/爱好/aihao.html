@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>爱好</title>
+		<style>
+		p {
+			margin: 0;
+			padding: 0;
+		}
+		#wrp {
+			width: 300px;
+			margin: 20px auto;
+		}
+		.xinzeng {
+			margin: 10px 0 0 72px;
+		}
+		.left {
+			margin: 10px 0 0 72px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrp">
+			<div>
+				<lable>你的爱好:<input type="text" /></lable>
+				<button id="add">增加</button>
+			</div>
+			<div class="xinzeng" id="del"></div>
+			<div class="left">
+				<button id="affirm">确认</button>
+			</div>
+			<div>
+				<div id="result" class="left"></div>
+			</div>
+		</div>
+		<script>
+			var add = document.getElementById('add'),
+			    del = document.getElementById('del'),
+			    wrp = document.getElementById('wrp'),
+			    result = document.getElementById('result');
+			    
+			add.onclick = function() {
+				var newDel = dels();
+				var len = del.getElementsByTagName('p').length
+				    del.appendChild(newDel);
+				if(len >= 3) {
+					add.setAttribute('disabled','disabled');
+				}
+			};
+			function dels () {
+				var p = document.createElement('p'),
+				    input = document.createElement('input'),
+				    button = document.createElement('button'),
+				    txt = document.createTextNode('删除');
+				    
+				input.type = 'text';
+				button.appendChild(txt);
+				p.appendChild(input);
+				p.appendChild(button);
+				button.onclick = function() {
+					var d = confirm('确定要删除吗？');
+					if (d) {
+					    del.removeChild(this.parentNode);
+						add.disabled = '';
+					}
+				};
+				return p;    
+			};
+			affirm.onclick = function() {
+				var inps = wrp.getElementsByTagName('input'),
+				    arr = [],
+				    len = inps.length; 
+				for(i=0; i<len; i++) {
+					arr.push(inps[i].value);
+				}
+				result.innerHTML = '你的爱好有：' + arr.join('-');
+				//alert(arr);
+			};
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
