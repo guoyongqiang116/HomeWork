@@ -1,0 +1,264 @@
+html, body, ul, li, p {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+body {
+	font-family: "宋体";
+}
+a {
+	text-decoration: none;
+}
+.center {
+	width: 500px;
+	height: 500px;
+}
+.tou {
+	width: 1500px;
+	height: 850px;
+	background-color: #D8E8FE;
+	margin: 0 auto;
+}
+.masker {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.1;
+}
+.dialog {
+	width: 394px;
+	/* height: 448px; */
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -197px;
+	margin-top: -224px;
+	box-shadow: 2px 2px 10px #aaa;
+}
+.head-l {
+    float: left;
+    margin-left: 15px;
+}
+.head-r {
+    float: right;
+}
+.head-l .hl-t {
+    display: inline-block;
+    background-image: url(../image/eb.png);
+    width: 24px;
+    height: 29px;
+    float: left;
+}
+.head-l .hl-z {
+    font-size: 18px;
+    color: #aaa;
+    font-weight: lighter;
+    font-family: '宋体';
+    margin: 11px 0 0 10px;
+    float: left;
+}
+.hwp {
+    overflow: hidden;
+    padding: 7px 0;
+    border-bottom: 1px solid #eee;
+    background-color: #f7f7f7;
+}
+.icons {
+    background-image: url(../image/8f.png);
+}
+.head-r {
+    width: 17px;
+    height: 17px;
+    background-position: -55px -48px;
+    cursor: pointer;
+    margin: 10px 20px 0 0;
+}
+.head-r:hover {
+    background-position: -71px -47px;
+}
+.shouji a {
+    /* display: inline-block; */
+    font-size: 12px;
+    color: #aaa;
+    /* width: 72px; */
+    /* height: 15px; */
+}
+.denglu .denglu-a {
+    padding: 24px 21px 0;
+    /* margin-bottom: 50px; */
+}
+.sj {
+    background-image: url(../image/5b.png);
+    width: 9px;
+    height: 14px;
+    background-repeat: no-repeat;
+    /* background-position: 0 -2px; */
+    padding: 0 0 0 16px;
+}
+.shouji {
+    margin: 0 0 10px 0;
+    text-align: right;
+}
+.shouji a:hover {
+    color: #2e7fdb;
+    text-decoration: underline;
+}
+.text input {
+    text-indent: 3px;
+    padding: 14px 145px 14px 36px;
+    border: none;
+}
+.text {
+    border-radius: 2px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.pass {
+    background-image: url(../image/c4.png);
+}
+.text .tx {
+    display: block;
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    background-position: -3px -68px;
+    top: 9px;
+    left: 9px;
+}
+.password {
+	border-radius: 2px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.password .pa {
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 21px;
+    background-position: -3px -149px;
+    top: 9px;
+    left: 9px;
+}
+.password input {
+	text-indent: 3px;
+    padding: 14px 145px 14px 36px;
+    border: none;
+}
+.text:hover p {
+	background-position: -3px -108px;
+}
+.password:hover p {
+    background-position: -3px -189px;
+}
+.zidong .zd {
+    float: left;
+}
+.zidong a {
+    float: right;
+    color: #1b66c7;
+    font-size: 12px;
+}
+.zd label {
+    font-size: 12px;
+    color: #666;
+    float: left;
+    margin-top: 2px;
+}
+.zd input {
+    float: left;
+}
+div.zidong:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.zidong a:hover {
+	text-decoration: underline;
+}
+
+.zidong {
+    margin-bottom: 15px;
+}
+
+.inp input {
+    width: 350px;
+    outline: none;
+    border: none;
+    background-color: #3f89ec;
+    color: #fff;
+    font-size: 16px;
+    height: 48px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.inp input:hover {
+    background-color: #4490f7;
+}
+
+.inp {
+    margin-bottom: 15px;
+}
+
+.zhuce a {
+    color: #1b66c7;
+    font-size: 12px;
+    float: right;
+}
+
+.zhuce:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.zhuce {
+    padding-bottom: 50px;
+}
+
+.ky {
+    font-size: 12px;
+    color: #666;
+    padding-left: 20px;
+}
+
+.wx {
+    float: right;
+    display: block;
+    width: 45px;
+    height: 43px;
+    background-position: -45px 43px;
+}
+
+.xuanze {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.tx {
+    display: block;
+    width: 25px;
+    height: 24px;
+    background-position: -88px 0px;
+    float: left;
+}
+
+.xl {
+    display: block;
+    width: 28px;
+    height: 24px;
+    background-position: -62px 0px;
+    float: left;
+}
+
+.xuanze .tx, .xl {
+    margin: 20px 0 0 20px;
+}
